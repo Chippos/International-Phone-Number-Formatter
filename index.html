@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>International telephone input</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  </head>
+  <body>
+    <div class="phone-number">
+      <div class="container d-flex flex-column justify-content-center align-items-center h-100">
+        <form id="login" onsubmit="process(event)">
+          <input id="phone" type="tel" name="phone" />
+          <input type="submit" class="btn" value="Submit" />
+        </form>
+        <div class="alert alert-info" style="display: none"></div>
+        <div class="field-reset">
+          <input type="text" class="text-value" style="display: none;">
+        <button class="btn reset-btn" style="display: none;">Reset</button>
+        </div>
+        <div class="alert alert-error" style="display: none"></div>
+      </div>
+    </div>
+  </body>
+  
+
+  <script src="./assets/js/script.js"></script>
+</html>
